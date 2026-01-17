@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS-Style/Sem-Check-Style.css">
+</head>
+<body>
+    <nav id="navBar" class="navBarClass1 navBarClass2 navBarClass3">
+      <div id="iCon" class="iconImageClass1 iconImageClass2">
+        <div id="iconImage"></div>
+      </div>
+      <h3 class="nav-heading">SEM EXAMINATION</h3>
+      <div id="nextLinks" class="nextLinksClass1 nextLinksClass2 nextLinksClass3">
+        <div id="sideOptions" class="sideOptionClass1 sideOptionsClass2">
+         <div class="selector-menu" id="menu">
+              <div >SCGPA Calculator</div>
+              <div>Add Credit</div>
+         </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- ================= MAIN CONTAINER ================= -->
+
+
+    <!-- STEP 1 & 2 -->
+    <div class="input-row">
+        <label>Enter Name or Roll number :
+        <input id="uid" placeholder="Name / Roll Number ">
+        </label>
+        <label>Enter Sem Qualifiction Mark :
+        <input id="qualifyMark" type="number" placeholder="Sem Qualification Mark">
+        </label>
+        <label>Enter Total Credits :
+        <input id="creditMark" type="number" placeholder="Total Credit">
+        </label>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="box">
+        <h3>Subject Input</h3>
+        <div id="subjectInputs">
+            <div class="subject-row">
+                <input placeholder="Subject Name">
+                <input type="number" placeholder="Mid Mark">
+                <input type="number" placeholder="Sem Mark">
+                
+            </div>
+            <div class="line-complete">--------#-#--------</div>
+            <div class="subject-row">
+                <input placeholder="Subject Name">
+                <input type="number" placeholder="Mid Mark">
+                <input type="number" placeholder="Sem Mark">
+                
+            </div>
+            <div class="line-complete">--------#-#--------</div>
+            <div class="subject-row">
+                <input placeholder="Subject Name">
+                <input type="number" placeholder="Mid Mark">
+                <input type="number" placeholder="Sem Mark">
+            </div>
+            
+        </div>
+        <button id="addInput">Add</button>
+        <button id="check">Check</button>
+    </div>
+
+    <!-- STEP 4 & 5 -->
+    <div class="flex">
+
+        <!-- STEP 4 -->
+        <div class="box">
+            <h3>Total Marks</h3>
+            <table>
+                <thead>
+                    <tr><th>Subject</th><th>Total</th></tr>
+                </thead>
+                <tbody id="totalTable"></tbody>
+            </table>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="box">
+            <h3>Grade / Result</h3>
+            <table>
+                <thead>
+                    <tr><th>Subject</th><th>Grade</th></tr>
+                </thead>
+                <tbody id="gradeTable"></tbody>
+            </table>
+            <h4 id="cgpaDisplay">CGPA: --</h4>
+        </div>
+    </div>
+
+    <!-- STEP 6 -->
+    <div class="saved">
+        <button id="save">Save</button>
+        <div id="savedData"></div>
+        <button id="clear-all" >Clear All</button>
+    </div>
+     <h3 class="text-heading">READ THIS 👇</h3>
+<div class="text-Holder">
+    <p>
+        The values shown on this website are only estimated results 
+        calculated based on the information provided. These results are not
+        official and not 100% accurate. They are meant to give you a general
+        idea of your performance, not a final judgment of your abilities or your future.
+    </p>
+    <ul>
+        <li>Results are calculated based on commonly used academic evaluation methods followed by many colleges.</li>
+        <li>Since evaluation rules may vary, the displayed results may not exactly match official results.</li>
+        <li>If the result is close to your expectation, the final outcome is likely to be the same or very similar.</li>
+        <li>Minor differences may occur due to grading or moderation policies.</li>
+        <li>This tool is meant for guidance and reassurance, not as an official result declaration.</li>
+    </ul>
+</div>
+<footer class="footer footer-position">
+<h3 class="footer-heading">Web Authorites</h3>
+ <ul class="final-details">
+    <li>Created by Team "LEO"</li>
+    <li>This website is protected by copyright. Unauthorized access or use is not permitted.</li>
+    <li>By using this website, you agree that you have read and accepted all Terms and Conditions.</li>
+    <li>For further details, visit 👇</li>
+    <li>Click : <a href="Sem-ExamDetails.html">SEM EXAM CALCULATION DETAILS<a></li>
+ </ul>
+</footer>
+<script src="JS-Script/Sem-Checkjs.js"></script>
+</body>
+</html>

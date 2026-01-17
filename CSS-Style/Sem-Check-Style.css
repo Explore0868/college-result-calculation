@@ -1,0 +1,284 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Segoe UI", sans-serif;
+}
+body{
+/* width:100%;
+height:100vh; */
+padding: 20px;
+padding-top:70px;
+padding-bottom: 0px;
+}
+a{
+text-decoration: none;
+color:black;
+}
+a:hover{
+color:blue;
+}
+h4,.nextLinksClass2{
+font-style:normal;
+font-weight:bold;
+}
+.nextLinksClass2{
+font-size:medium;
+font-weight:600;
+}
+#iconImage{
+width:30px;
+height:30px;
+background-image:url(images/index-page-icon.jpg);
+background-size:cover;
+border-radius:10px;
+}
+#sideOptions{
+width:40px;
+height:40px;
+background-image:url(images/option.jpg);
+background-size:cover;
+border-radius:10px;
+cursor:pointer;
+}
+.navBarClass1{
+width:100%;
+height:50px;
+padding-left:20px;
+padding-right:20px;
+background-color: white;;
+z-index:10;
+}
+.navBarClass3{
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
+}
+.navBarClass2{
+display:flex;
+align-items: center;
+gap:20px;
+}
+.nav-heading{
+height:100%;
+width:calc(100% - 70px);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#nextLinks{
+height:100%;
+width:auto;
+}
+.nextLinksClass3{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+* ---------- GLOBAL ---------- */
+/* *{
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+body{
+margin:0;
+background:linear-gradient(120deg,#74b9ff,#a29bfe);
+padding:20px;
+} */
+h2,h3{
+margin:5px 0;
+}
+button{
+cursor:pointer;
+border:none;
+padding:8px 12px;
+border-radius:6px;
+background:#0984e3;
+color:white;
+}
+button:hover{ background:#0652DD; }
+input{
+padding:6px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+/* ---------- TOP BAR ---------- */
+.top-bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+.selector{
+position:relative;
+}
+.selector-btn{
+background:#2d3436;
+}
+.selector-menu{
+display:none;
+position:absolute;
+right:0;
+top:40px;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+border-radius:6px;
+}
+.selector-menu div{
+padding:10px 15px;
+cursor:pointer;
+}
+.selector-menu div:hover{
+background:#dfe6e9;
+}
+
+/* ---------- MAIN BOX ---------- */
+.container{
+background:white;
+padding:15px;
+border-radius:12px;
+margin-top:15px;
+}
+
+/* ---------- INPUT AREA ---------- */
+.input-row{
+display:flex;
+gap:10px;
+margin-bottom:10px;
+}
+
+.subject-row{
+display:flex;
+gap:5px;
+margin-bottom:5px;
+}
+.subject-row input{
+flex:1;
+}
+.line-complete{
+min-height:10px;
+display:none;
+}
+
+/* ---------- TABLES ---------- */
+table{
+width:100%;
+border-collapse:collapse;
+}
+th,td{
+border:1px solid #ccc;
+padding:6px;
+text-align:center;
+}
+th{
+background:#0984e3;
+color:white;
+}
+
+/* ---------- LAYOUT ---------- */
+.flex{
+margin-top: 20px;
+display:flex;
+gap:10px;
+}
+.box{
+flex:1;
+border:1px solid #ccc;
+border-radius:8px;
+padding:10px;
+}
+.box button{
+width:calc(50% - 20px);
+}
+/* ---------- SAVE BOX ---------- */
+.saved{
+margin-top:15px;
+}
+.saved div{
+min-height:20px;
+background:#dfe6e9;
+padding:6px;
+margin:4px 0;
+border-radius:5px;
+}
+.saved button{
+width:100%;
+}
+.footer{
+width: 100vw;
+margin-top:5px;
+padding:10px;
+background-color:#99e6ff;
+}
+
+ul {
+list-style: none;
+padding: 0;
+}
+
+li {
+background: #e9ecef;
+padding: 8px;
+margin: 5px 0;
+border-radius: 5px;
+cursor: context-menu;
+}
+
+.footer-position{
+margin-left:-20px;
+/* margin-right:-20px; */
+}
+
+.final-details li{
+background-color: #99e6ff;
+}
+
+.final-details li:hover{
+    box-shadow:0px 1px 5px  #828080;
+}
+.footer-heading,.text-heading{
+    text-align:center;
+}
+
+.text-Holder{
+    border-radius: 4x;
+    border:1px solid #ddd;
+}
+
+.text-Holder li:hover{
+    box-shadow:0px 1px 5px  #828080;
+}
+
+.text-heading{
+margin-top:20px;
+}
+p{
+  width:calc(100% - 20px);
+  min-height:50px;
+  margin-top:10px;
+  padding:10px;
+}
+@media(max-width:800px){
+.input-row{
+flex-direction: column;
+}
+label input{
+width:100%;
+}
+.subject-row{
+flex-wrap: wrap;
+}
+.line-complete{
+width:100%;
+display:block;
+text-align:center;
+}
+
+}
+@media(max-width:600px){
+.flex{
+flex-direction:column;
+}
+}

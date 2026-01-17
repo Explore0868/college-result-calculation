@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS-Style/Mid-Check-Style.css">
+</head>
+<body>
+    <nav id="navBar" class="navBarClass1 navBarClass2 navBarClass3">
+      <div id="iCon" class="iconImageClass1 iconImageClass2">
+        <div id="iconImage" ></div>
+        <h4 class="iconText">MID RESULT</h4>
+      </div>
+      <div id="nextLinks" class="nextLinksClass1 nextLinksClass2 nextLinksClass3">
+       <h4>MID EXAM CALCULATION</h4>
+      </div>
+    </nav>
+ 
+
+    <!-- Unique Identity -->
+     <label>
+    Enter Name or Roll Number :
+    <input type="text" id="uniqueId" class="uniqueIdClass1" placeholder="Enter Name / Roll No">
+     </label>
+
+    <!-- Ratio Selection -->
+    <h3>Select The Examination Method </h3>
+    <div class="radio-group radio-groupClass1">
+        <label>
+            <input  type="radio" name="examType" value="average" checked>
+            Average Calculation
+        </label>
+        <label>
+            <input type="radio" name="examType" value="internal">
+            Internal Calculation
+        </label>
+        <label>
+            <input type="radio" name="examType" value="external">
+            External Calculation
+        </label>
+        <label>
+            <input type="radio" name="examType" value="direct" >
+            Direct Calculation
+        </label>
+    </div>
+
+    <!-- Input & Display Block -->
+    <div class="box">
+
+        <!-- Input Part -->
+        <div class="input-part input-partClass1">
+            <div id="inputsHolder">
+                <input type="number" placeholder="Mid 1">
+                <input type="number" placeholder="Mid 2">
+            </div>
+            <button id="add-input">Add</button>
+            <button id="checkBtn">Check</button>
+        </div>
+
+        <!-- Display Part -->
+        <div class="display-part display-partClass1">
+            <p id="result">Result will appear here</p>
+            <button id="saveBtn">Save</button>
+        </div>
+
+    </div>
+
+    <!-- Saved Details -->
+    <div class="saved-box">
+        <h3>Saved Records</h3>
+        <ul id="recordList"></ul>
+        <button id="clearAll">Clear All</button>
+    </div>
+     <h3>READ THIS 👇</h3>
+<div class="text-Holder">
+    <p>
+        The values shown on this website are only estimated results 
+        calculated based on the information provided. These results are not
+        official and not 100% accurate. They are meant to give you a general
+        idea of your performance, not a final judgment of your abilities or your future.
+    </p>
+    <ul>
+        <li>Results are calculated based on commonly used academic evaluation methods followed by many colleges.</li>
+        <li>Since evaluation rules may vary, the displayed results may not exactly match official results.</li>
+        <li>If the result is close to your expectation, the final outcome is likely to be the same or very similar.</li>
+        <li>Minor differences may occur due to grading or moderation policies.</li>
+        <li>This tool is meant for guidance and reassurance, not as an official result declaration.</li>
+    </ul>
+</div>
+<footer class="footer footer-position">
+<h3>Web Authorites</h3>
+ <ul class="final-details">
+    <li>Created by Team "LEO"</li>
+    <li>This website is protected by copyright. Unauthorized access or use is not permitted.</li>
+    <li>By using this website, you agree that you have read and accepted all Terms and Conditions.</li>
+    <li>For further details, visit 👇</li>
+    <li>Click : <a href="Mid-ExamDetails.html">MID EXAM CALCULATION DETAILS<a></li>
+ </ul>
+</footer>
+
+<script src="JS-Script/Mid-Check-java.js"></script>
+</body>
+</html>
