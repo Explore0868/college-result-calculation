@@ -30,4 +30,30 @@ if(!optionButton.contains(event.target)) {handleOutsideInteraction(event);assign
         formulaParent.scrollLeft = childCenter - parentRect.width / 2;
     }
 
+const img = document.getElementById("mainPicture");
+
+const emojis = ["❤️", "🤖", "🦁", "😍", "👏", "😎", "✨"];
+
+img.addEventListener("click", function(e) {
+
+  // pick random emoji
+  const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+
+  const emoji = document.createElement("div");
+  emoji.className = "emoji";
+  emoji.innerText = randomEmoji;
+
+  document.body.appendChild(emoji);
+
+  // make it follow cursor
+    emoji.style.left = e.pageX + "px";
+    emoji.style.top = e.pageY + "px";
+  
+  // remove after 1 second
+  setTimeout(() => {
+    document.removeEventListener("mousemove", moveEmoji);
+    emoji.remove();
+  }, 1000);
+});
     window.onload = assignMiddlePosition;
+
