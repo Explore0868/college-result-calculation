@@ -90,7 +90,6 @@ width:96%;
 height:300px;
 background-image:url(images/readingimage.jpg);
 background-size:contain;
-background-position:center;
 }
 .mainPictureClass1{
 margin:auto;
@@ -224,6 +223,26 @@ height:70px;
 .linkSliderClass1 li {
 margin-top:10px;
 }
+
+.emoji {
+  position: absolute;
+  font-size: 28px;
+  pointer-events: none;
+  animation: fadeOut 1s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+    transform: translateY(-5px);
+  }
+}
+
 
 /* ---------->media query case <----------- */
 
