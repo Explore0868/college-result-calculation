@@ -125,7 +125,7 @@ background: #0056b3;
 }
 
 .input-part button{
-    width:calc(100% - 50% - 10px);
+    width:calc(100% - 68% );
 }
 .saved-box {
 margin-top: 20px;
@@ -201,4 +201,5 @@ width:60px;
 width:calc(100% - 100px);
 }
 }
+
 
