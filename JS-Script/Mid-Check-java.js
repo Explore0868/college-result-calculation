@@ -7,6 +7,7 @@ const recordList = document.getElementById("recordList");
 const uniqueIdInput = document.getElementById("uniqueId");
 const clearAllBtn = document.getElementById("clearAll");
 const addInput=document.getElementById("add-input");
+const removeInput=document.getElementById("remove-input");
 
 let currentResult = "0";
 let radioResult="average";
@@ -41,7 +42,7 @@ calcRadios.forEach(radio => {
             inputsDiv.innerHTML=`
             <input type="number" placeholder="Enter value">`;
         }
-        addInput.style.display=radioResult==="direct"? addRemove():addAdded();
+         addInput.style.display=removeInput.style.display=radioResult==="direct"? addRemove():addAdded();
     });
 });
 
@@ -51,8 +52,8 @@ function addRemove(){
 }
 
 function addAdded(){
-   addInput.style.width="calc(100% - 50% - 10px)";
-   checkBtn.style.width="calc(100% - 50% - 10px)";
+   addInput.style.width="calc(100% - 68% )";
+   checkBtn.style.width="calc(100% - 68% )";
     return "inline-block";
 }
 /* 🔹 Check Button */
@@ -84,6 +85,16 @@ addInput.addEventListener("click",()=>{
         radioResult==="average"? "Mid":radioResult)} ${total_input+1}
     ">`+" ";
 })
+
+/* 🔹 Remove Input Button */
+removeInput.addEventListener("click",()=>{
+    if(inputsDiv.children.length===0){
+        alert("No more input to remove");
+        return ;
+    }
+
+    inputsDiv.lastElementChild.remove();
+});
 
 /* 🔹 Save Button */
 saveBtn.addEventListener("click", () => {
@@ -133,3 +144,4 @@ clearAllBtn.addEventListener("click", () => {
     localStorage.removeItem("records");
     loadRecords();
 });
+
