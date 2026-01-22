@@ -77,7 +77,7 @@ align-items:center;
 
 h2, h3 {
 text-align: center;
-margin-top: 20px;;
+margin-top: 20px;
 margin-bottom: 20px;
 }
 
@@ -151,7 +151,6 @@ background-color:#99e6ff;
 }
 .footer-position{
 margin-left:-20px;
-/* margin-right:-20px; */
 }
 .final-details li{
 background-color: #99e6ff;
@@ -201,5 +200,4 @@ width:60px;
 width:calc(100% - 100px);
 }
 }
-
 
