@@ -23,7 +23,7 @@ function addSubject(){
     if(ScgpaNotvisible) div.innerHTML=`<input type="number" placeholder="SCGPA "></input>`;
     else{
     div.innerHTML=`
-        ${divStyle.innerHTML===""? "":htmlPart}
+        ${divStyle.children.length===0? "":htmlPart}
         <input placeholder="Subject Name">
         <input type="number" placeholder="Mid Mark">
         <input type="number" placeholder="Sem Mark">
@@ -118,6 +118,18 @@ check.addEventListener("click",()=>{
     cgpaCalculator(gradePoints,creditValues);
 })
 
+/* ================= REMOVE INPUT ================= */
+const removeInput=document.getElementById("removeInput");
+removeInput.addEventListener("click",()=>{
+let subjectInput=document.getElementById("subjectInputs");
+    if(subjectInput.children.length===0){
+        alert("No more input to remove");
+        return ;
+    }
+
+    subjectInput.lastElementChild.remove();
+});
+
 /* ================= CGPA FUNCTION ================= */
 function cgpaCalculator(gradePoints,creditValues){
     let finalCGPA=document.getElementById("cgpaDisplay");
@@ -187,4 +199,5 @@ selMenu.children[1].addEventListener("click",()=>{
     document.querySelector(".input-row").children[2].style.display="block";
     document.getElementById("subjectInputs").innerHTML="";
     for(i=0;i<3;i++) addSubject();   
+
 })
